@@ -1,7 +1,6 @@
 module.exports = {
   branchPrefix: "renovate-action/",
   platform: "github",
-  dryRun: "full",
   onboarding: false,
   requireConfig: "optional",
   allowedPostUpgradeCommands: [".*"],
