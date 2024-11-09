@@ -3,9 +3,9 @@ module.exports = {
   platform: "github",
   dryRun: "full",
   onboarding: false,
-  requireConfig: false,
+  requireConfig: "optional",
   allowedPostUpgradeCommands: [".*"],
-  repositories: ["bonddim/github-action", "bonddim/monitoring-mixin"],
+  repositories: ["bonddim/renovate-action", "bonddim/monitoring-mixin"],
   packageRules: [
     {
       description: "lockFileMaintenance",
@@ -18,7 +18,7 @@ module.exports = {
         "lockFileMaintenance",
       ],
       dependencyDashboardApproval: false,
-      minimumReleaseAge: 0,
+      minimumReleaseAge: "0",
     },
   ],
 };
