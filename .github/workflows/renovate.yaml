@@ -9,8 +9,8 @@ on:
         default: false
         type: boolean
 
-  schedule:
-    - cron: "0/15 * * * *"
+  # schedule:
+  #   - cron: "0/15 * * * *"
 
 jobs:
   renovate:

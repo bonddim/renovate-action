@@ -4,7 +4,7 @@ module.exports = {
   onboarding: false,
   requireConfig: "optional",
   allowedPostUpgradeCommands: [".*"],
-  repositories: ["bonddim/renovate-action", "bonddim/monitoring-mixin"],
+  repositories: ["bonddim/monitoring-mixin"],
   packageRules: [
     {
       description: "lockFileMaintenance",
