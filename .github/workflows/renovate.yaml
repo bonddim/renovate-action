@@ -27,8 +27,11 @@ jobs:
 
       - uses: renovatebot/github-action@v41.0.2
         with:
-          configurationFile: renovate-config.js
           token: "${{ steps.app-token.outputs.token }}"
         env:
           LOG_LEVEL: "debug"
           RENOVATE_DRY_RUN: ${{ inputs.dry-run && 'full' }}
+          RENOVATE_ALLOWED_POST_UPGRADE_COMMANDS: ".*"
+          RENOVATE_ONBOARDING: false
+          RENOVATE_PLATFORM: "github"
+          RENOVATE_REPOSITORIES: "bonddim/monitoring-mixin"
